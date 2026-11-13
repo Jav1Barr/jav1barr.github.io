@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+</head>
+
+<body>
+    <form action="https://lm.ciclo.iesnervion.es/encuesta.php" method="post">
+        <fieldset>
+            <legend>Datos academicos</legend>
+            <label for="nombre">Nombre y apellidos</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="ciclo">Ciclo fomartivo</label>
+            <select id="ciclo" name="ciclo">
+                <option value="DAM" selected>DAM</option>
+                <option value="DAW">DAW</option>
+                <option value="ASIR">ASIR</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias técnicas</legend>
+            <label for="lenguaje">Lenguaje principal</label><br>
+            <input type="radio" id="java" name="lenguaje" value="java">
+            <label for="java">Java</label>
+
+            <input type="radio" id="python" name="lenguaje" value="python">
+            <label for="pyhton">Python</label>
+
+            <input type="radio" id="c#" name="lenguaje" value="c#">
+            <label for="c#">C#</label>
+
+            <input type="radio" id="javascript" name="lenguaje" value="javascript">
+            <label for="javascript">JavaScript</label>
+            <br>
+
+            <label for="entornos">Entornos</label><br>
+            <input type="checkbox" id="linux" name="entornos" value="linux">
+            <label for="linux">Linux</label>
+            <input type="checkbox" id="windows" name="entornos" value="windows">
+            <label for="windows">Windows</label>
+            <input type="checkbox" id="macos" name="entornos" value="macos">
+            <label for="macos">macOS</label>
+            <br>
+            <label for="comentarios">Experiencia previa</label><br>
+            <textarea rows="4" cols="40"></textarea> 
+            <br>
+            <button type="reset">Reinicio</button>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
